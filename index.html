@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <style>
+        @font-face{
+            font-family: 'pixelmania';
+            src: url('./assets/font/pixelmania.ttf');
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #2c3e50;
+        }
+        #container {
+            margin-top: 130px;
+            transform: scale(2);
+        }
+
+        #overlayName{
+            display:none;
+        }
+
+        .activeOverlay{
+            position: absolute;
+            width: 640px;
+            height: 360px;
+            background: #000000a6;
+            top: 38px;
+            left: 50%;
+            margin-left: -320px;
+            text-align: center;
+            display:block !important;
+        }
+
+        label{
+            font-family: 'pixelmania';
+            font-size: 1rem;
+            margin: 30px 0 0;
+            display: block;
+            text-align: center;
+            color: #fff;
+        }
+
+        .activeOverlay input{
+            font-family: 'pixelmania';
+            font-size: 1rem;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 17px;
+            padding:1rem;
+        }
+
+        #avanzar{
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            font-family: 'pixelmania';
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #f9ca24;
+        }
+        #avanzar:hover{
+            font-size: 2rem;
+            color: #f5da7b;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script src="phaser.min.js"></script>
+    <div id="overlayName">
+        <label for="">NOMBRE</label>
+        <input type="text" name="nombre" id="nombre" >
+        <label for="">NIVEL</label>
+        <input type="number" name="nivel" id="nivel">
+        <br>
+        <button id="avanzar">EMPEZAR</button>
+    </div>
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>

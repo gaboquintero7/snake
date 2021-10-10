@@ -1,0 +1,13 @@
+
+{
+    "players": [
+        {"name": "GABO", "points":4000 },
+        {"name": "DJ PATON", "points":20000 },
+        {"name": "MAC", "points":8000 },
+        {"name": "CARLOS", "points":8000 },
+        {"name": "EL PAPA DE LOS HELADOS", "points":1800 },
+        {"name": "JUAN", "points":1000 },
+        {"name": "GABRIEL", "points":100 },
+        {"name": "ALVARO", "points":16000 }
+    ]
+}
